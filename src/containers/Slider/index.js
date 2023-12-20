@@ -9,11 +9,15 @@ const Slider = () => {
   const [index, setIndex] = useState(0);
   const byDateDesc = data?.focus.sort((evtA, evtB) => (new Date(evtA.date) < new Date(evtB.date) ? -1 : 1));
   const nextCard = () => {
-    setTimeout(() => setIndex(index < byDateDesc.length ? index + 1 : 0), 5000);
+    setIndex((prevIndex) => (prevIndex + 1) % byDateDesc.length);
   };
   useEffect(() => {
-    nextCard();
-  });
+    const timer = setTimeout(() => {
+      nextCard();
+    }, 5000);
+
+    return () => clearTimeout(timer);
+  }, [index]);
   return (
     <div className="SlideCardList">
       {byDateDesc?.map((event, idx) => (
