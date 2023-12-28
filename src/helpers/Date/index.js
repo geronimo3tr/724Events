@@ -14,3 +14,6 @@ export const MONTHS = [
 ];
 
 export const getMonth = (date) => MONTHS[date.getMonth()];
+export function getMonthFromPeriod(period) {
+  return period.split(" ")[1];
+}
