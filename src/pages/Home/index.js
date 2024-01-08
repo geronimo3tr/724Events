@@ -15,6 +15,9 @@ import { useData } from "../../contexts/DataContext";
 const Page = () => {
   const { data } = useData();
   const last = data && data.events && data.events.length > 0 ? data.events[data.events.length - 1] : null;
+  console.log("Last cover:", last?.cover);
+  console.log("Last title:", last?.title);
+  console.log("Last date:", new Date(last?.date));
   return (
     <>
       <header>
