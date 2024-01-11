@@ -1,9 +1,9 @@
 import PropTypes from "prop-types";
-import { getMonthFromPeriod } from "../../helpers/Date";
+import { getMonth } from "../../helpers/Date";
 
 import "./style.scss";
 
-const EventCard = ({ imageSrc, imageAlt, title, label, small = false, period, ...props }) => (
+const EventCard = ({ imageSrc, imageAlt, title, label, small = false, date, ...props }) => (
   <div data-testid="card-testid" className={`EventCard${small ? " EventCard--small" : ""}`} {...props}>
     <div className="EventCard__imageContainer">
       <img data-testid="card-image-testid" src={imageSrc} alt={imageAlt} />
@@ -11,7 +11,7 @@ const EventCard = ({ imageSrc, imageAlt, title, label, small = false, period, ..
     </div>
     <div className="EventCard__descriptionContainer">
       <div className="EventCard__title">{title}</div>
-      <div className="EventCard__month">{getMonthFromPeriod(period)}</div>
+      <div className="EventCard__month">{getMonth(date)}</div>
     </div>
   </div>
 );
@@ -19,7 +19,7 @@ const EventCard = ({ imageSrc, imageAlt, title, label, small = false, period, ..
 EventCard.propTypes = {
   imageSrc: PropTypes.string.isRequired,
   imageAlt: PropTypes.string,
-  period: PropTypes.string,
+  date: PropTypes.instanceOf(Date).isRequired,
   title: PropTypes.string.isRequired,
   small: PropTypes.bool,
   label: PropTypes.string.isRequired,
@@ -27,7 +27,6 @@ EventCard.propTypes = {
 
 EventCard.defaultProps = {
   imageAlt: "image",
-  period: "",
   small: false,
 };
 

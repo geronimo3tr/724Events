@@ -15,9 +15,6 @@ import { useData } from "../../contexts/DataContext";
 const Page = () => {
   const { data } = useData();
   const last = data && data.events && data.events.length > 0 ? data.events[data.events.length - 1] : null;
-  console.log("Last cover:", last?.cover);
-  console.log("Last title:", last?.title);
-  console.log("Last date:", new Date(last?.date));
   return (
     <>
       <header>
@@ -90,7 +87,7 @@ const Page = () => {
       <footer className="row">
         <div className="col presta">
           <h3>Notre derniére prestation</h3>
-          <EventCard imageSrc={last?.cover} title={last?.title} date={new Date(last?.date)} small label={last?.type} />
+          {last && <EventCard imageSrc={last?.cover} title={last?.title} date={new Date(last?.date)} small label={last?.type} />}
         </div>
         <div className="col contact">
           <h3>Contactez-nous</h3>
