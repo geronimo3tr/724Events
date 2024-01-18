@@ -19,6 +19,7 @@ const Icon = ({ name }) => {
     case "facebook":
       icon = (
         <path
+          data-testid="icon-facebook"
           d="M27.3702 2.96387H22.9245C20.9594 2.96387 19.0748 3.74451 17.6852 5.13405C16.2957 6.5236 15.515 8.40823 15.515 10.3733V14.819H11.0693V20.7466H15.515V32.6018H21.4426V20.7466H25.8883L27.3702 14.819H21.4426V10.3733C21.4426 9.98032 21.5987 9.6034 21.8766 9.32549C22.1546 9.04758 22.5315 8.89145 22.9245 8.89145H27.3702V2.96387Z"
           stroke="#5B32FF"
           strokeWidth="1.54633"
@@ -59,12 +60,7 @@ const Icon = ({ name }) => {
           </g>
           <defs>
             <clipPath id="clip0_2_176">
-              <rect
-                width="35.5655"
-                height="34.7923"
-                fill="white"
-                transform="translate(0.130859 0.0927734)"
-              />
+              <rect width="35.5655" height="34.7923" fill="white" transform="translate(0.130859 0.0927734)" />
             </clipPath>
           </defs>
         </>
@@ -82,16 +78,10 @@ const Icon = ({ name }) => {
       );
       break;
     default:
-      icon = null
+      icon = null;
   }
   return (
-    <svg
-      width="36"
-      height="36"
-      viewBox="0 0 36 36"
-      fill="none"
-      xmlns="http://www.w3.org/2000/svg"
-    >
+    <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
       {icon}
     </svg>
   );
@@ -99,6 +89,6 @@ const Icon = ({ name }) => {
 
 Icon.propTypes = {
   name: PropTypes.string.isRequired,
-}
+};
 
 export default Icon;

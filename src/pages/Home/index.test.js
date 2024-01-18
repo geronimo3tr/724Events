@@ -28,15 +28,26 @@ describe("When Form is created", () => {
 
 describe("When a page is created", () => {
   it("a list of events is displayed", () => {
-    // to implement
+    render(<Home />);
+    expect(screen.getByTestId("events-container")).toBeInTheDocument();
   });
   it("a list a people is displayed", () => {
-    // to implement
+    render(<Home />);
+    expect(screen.getByText("Samira")).toBeInTheDocument();
+    expect(screen.getByText("Jean-baptiste")).toBeInTheDocument();
+    expect(screen.getByText("Alice")).toBeInTheDocument();
+    expect(screen.getByText("Luís")).toBeInTheDocument();
+    expect(screen.getByText("Christine")).toBeInTheDocument();
+    expect(screen.getByText("Isabelle")).toBeInTheDocument();
+    expect(screen.getByTestId("people-container")).toBeInTheDocument();
   });
   it("a footer is displayed", () => {
-    // to implement
+    render(<Home />);
+    expect(screen.getByTestId("footer")).toBeInTheDocument();
   });
   it("an event card, with the last event, is displayed", () => {
-    // to implement
+    render(<Home />);
+    expect(screen.getByText("Notre derniére prestation")).toBeInTheDocument();
+    expect(screen.getByTestId("last-event-card")).toBeInTheDocument();
   });
 });
