@@ -9,8 +9,7 @@ const Logo = ({ size }) => (
       height={size === "large" ? "67" : "35"}
       viewBox="0 0 101 35"
       fill="none"
-      xmlns="http://www.w3.org/2000/svg"
-    >
+      xmlns="http://www.w3.org/2000/svg">
       <path
         d="M35.8119 33.5129C34.7561 33.5129 33.8433 33.2779 33.0736 32.8079C32.3039 32.3311 31.7079 31.6602 31.2856 30.7951C30.8633 29.9232 30.6521 28.8947 30.6521 27.7095C30.6521 26.5038 30.8599 25.4651 31.2754 24.5932C31.6977 23.7145 32.2903 23.0401 33.0532 22.5701C33.8229 22.1001 34.7356 21.8651 35.7914 21.8651C36.8609 21.8651 37.7736 22.1104 38.5297 22.6008C39.2926 23.0844 39.8716 23.786 40.2666 24.7056C40.6685 25.6251 40.8593 26.732 40.8388 28.0262H39.6127V27.6175C39.5787 26.1053 39.2381 24.9542 38.591 24.164C37.9439 23.3739 37.0175 22.9788 35.8119 22.9788C34.5654 22.9788 33.6015 23.3909 32.9204 24.2151C32.246 25.0325 31.9088 26.1905 31.9088 27.689C31.9088 29.174 32.246 30.3251 32.9204 31.1425C33.6015 31.9599 34.5585 32.3686 35.7914 32.3686C36.6429 32.3686 37.3853 32.1711 38.0188 31.776C38.6591 31.3741 39.1666 30.8019 39.5412 30.0595L40.6038 30.5295C40.1611 31.4831 39.5208 32.2187 38.683 32.7364C37.8451 33.2541 36.8881 33.5129 35.8119 33.5129ZM31.4593 28.0262V26.9636H40.1747V28.0262H31.4593Z"
         fill="url(#paint0_linear_56_57)"
@@ -39,96 +38,37 @@ const Logo = ({ size }) => (
         d="M17.5654 33.2065L28.1175 7.47857H14.6875V1.91577H34.4837V7.47857L23.9751 33.2065H17.5654Z"
         fill="url(#paint6_linear_56_57)"
       />
-      <path
-        d="M2.87786 33.2065L13.43 7.47857H0V1.91577H19.7962V7.47857L9.28762 33.2065H2.87786Z"
-        fill="url(#paint7_linear_56_57)"
-      />
+      <path d="M2.87786 33.2065L13.43 7.47857H0V1.91577H19.7962V7.47857L9.28762 33.2065H2.87786Z" fill="url(#paint7_linear_56_57)" />
       <defs>
-        <linearGradient
-          id="paint0_linear_56_57"
-          x1="31.4312"
-          y1="28.0978"
-          x2="93.0547"
-          y2="27.4592"
-          gradientUnits="userSpaceOnUse"
-        >
+        <linearGradient id="paint0_linear_56_57" x1="31.4312" y1="28.0978" x2="93.0547" y2="27.4592" gradientUnits="userSpaceOnUse">
           <stop stopColor="#3300FF" />
           <stop offset="1" stopColor="#3300FF" />
         </linearGradient>
-        <linearGradient
-          id="paint1_linear_56_57"
-          x1="31.4312"
-          y1="28.0978"
-          x2="93.0547"
-          y2="27.4592"
-          gradientUnits="userSpaceOnUse"
-        >
+        <linearGradient id="paint1_linear_56_57" x1="31.4312" y1="28.0978" x2="93.0547" y2="27.4592" gradientUnits="userSpaceOnUse">
           <stop stopColor="#3300FF" />
           <stop offset="1" stopColor="#3300FF" />
         </linearGradient>
-        <linearGradient
-          id="paint2_linear_56_57"
-          x1="31.4312"
-          y1="28.0978"
-          x2="93.0547"
-          y2="27.4592"
-          gradientUnits="userSpaceOnUse"
-        >
+        <linearGradient id="paint2_linear_56_57" x1="31.4312" y1="28.0978" x2="93.0547" y2="27.4592" gradientUnits="userSpaceOnUse">
           <stop stopColor="#3300FF" />
           <stop offset="1" stopColor="#3300FF" />
         </linearGradient>
-        <linearGradient
-          id="paint3_linear_56_57"
-          x1="31.4312"
-          y1="28.0978"
-          x2="93.0547"
-          y2="27.4592"
-          gradientUnits="userSpaceOnUse"
-        >
+        <linearGradient id="paint3_linear_56_57" x1="31.4312" y1="28.0978" x2="93.0547" y2="27.4592" gradientUnits="userSpaceOnUse">
           <stop stopColor="#3300FF" />
           <stop offset="1" stopColor="#3300FF" />
         </linearGradient>
-        <linearGradient
-          id="paint4_linear_56_57"
-          x1="31.4312"
-          y1="28.0978"
-          x2="93.0547"
-          y2="27.4592"
-          gradientUnits="userSpaceOnUse"
-        >
+        <linearGradient id="paint4_linear_56_57" x1="31.4312" y1="28.0978" x2="93.0547" y2="27.4592" gradientUnits="userSpaceOnUse">
           <stop stopColor="#3300FF" />
           <stop offset="1" stopColor="#3300FF" />
         </linearGradient>
-        <linearGradient
-          id="paint5_linear_56_57"
-          x1="31.4312"
-          y1="28.0978"
-          x2="93.0547"
-          y2="27.4592"
-          gradientUnits="userSpaceOnUse"
-        >
+        <linearGradient id="paint5_linear_56_57" x1="31.4312" y1="28.0978" x2="93.0547" y2="27.4592" gradientUnits="userSpaceOnUse">
           <stop stopColor="#3300FF" />
           <stop offset="1" stopColor="#3300FF" />
         </linearGradient>
-        <linearGradient
-          id="paint6_linear_56_57"
-          x1="14.5386"
-          y1="17.3067"
-          x2="32.6182"
-          y2="17.3067"
-          gradientUnits="userSpaceOnUse"
-        >
+        <linearGradient id="paint6_linear_56_57" x1="14.5386" y1="17.3067" x2="32.6182" y2="17.3067" gradientUnits="userSpaceOnUse">
           <stop stopColor="#643EFF" />
           <stop offset="1" stopColor="#A691FC" />
         </linearGradient>
-        <linearGradient
-          id="paint7_linear_56_57"
-          x1="9.89808"
-          y1="1.91577"
-          x2="9.89808"
-          y2="33.2065"
-          gradientUnits="userSpaceOnUse"
-        >
+        <linearGradient id="paint7_linear_56_57" x1="9.89808" y1="1.91577" x2="9.89808" y2="33.2065" gradientUnits="userSpaceOnUse">
           <stop stopColor="#9278FE" />
           <stop offset="1" stopColor="#613CFB" />
         </linearGradient>
@@ -139,9 +79,9 @@ const Logo = ({ size }) => (
 
 Logo.propTypes = {
   size: PropTypes.string,
-}
+};
 Logo.defaultProps = {
-  size: 'small'
-}
+  size: "small",
+};
 
 export default Logo;
